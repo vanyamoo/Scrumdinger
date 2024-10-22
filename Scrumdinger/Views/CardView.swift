@@ -1,6 +1,9 @@
-/*
- See LICENSE folder for this sample’s licensing information.
- */
+//
+//  CardView.swift
+//  Scrumdinger
+//
+//  Created by Vanya Mutafchieva on 22/10/2024.
+//
 
 import SwiftUI
 
