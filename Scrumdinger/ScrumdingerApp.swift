@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct ScrumdingerApp: App {
+    
+    @StateObject private var store = ScrumStore()
+    @State private var errorWrapper: ErrorWrapper?
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

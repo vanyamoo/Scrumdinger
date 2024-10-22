@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4E9646EB2CC7EE2C00C6995B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9646EA2CC7EE2C00C6995B /* AVFoundation.framework */; };
+		4E9646ED2CC7EE3300C6995B /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9646EC2CC7EE3300C6995B /* Speech.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4E9646C72CC7ECA800C6995B /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E9646EA2CC7EE2C00C6995B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4E9646EC2CC7EE3300C6995B /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9646ED2CC7EE3300C6995B /* Speech.framework in Frameworks */,
+				4E9646EB2CC7EE2C00C6995B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				4E9646C92CC7ECA800C6995B /* Scrumdinger */,
+				4E9646E92CC7EE2B00C6995B /* Frameworks */,
 				4E9646C82CC7ECA800C6995B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +53,15 @@
 				4E9646C72CC7ECA800C6995B /* Scrumdinger.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4E9646E92CC7EE2B00C6995B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E9646EC2CC7EE3300C6995B /* Speech.framework */,
+				4E9646EA2CC7EE2C00C6995B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
