@@ -43,13 +43,14 @@ struct CardView: View {
     private var minutesLabel: some View {
         Label("\(scrum.lengthInMinutes)", systemImage: "clock")
             .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
+            .labelStyle(.trailingIcon)
     }
 }
 
 #Preview {
-    var scrum0 = DailyScrum.sampleData[0]
-    var scrum1 = DailyScrum.sampleData[1]
-    var scrum2 = DailyScrum.sampleData[2]
+    let scrum0 = DailyScrum.sampleData[0]
+    let scrum1 = DailyScrum.sampleData[1]
+    let scrum2 = DailyScrum.sampleData[2]
     
     VStack {
         CardView(scrum: scrum0)

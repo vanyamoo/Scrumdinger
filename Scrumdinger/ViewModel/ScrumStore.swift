@@ -37,4 +37,15 @@ class ScrumStore: ObservableObject {
         }
         _ = try await task.value
     }
+    
+    // MARK: - Adding scrums
+    
+    func append(_ scrum: DailyScrum) { // at end of palettes
+        scrums.append(scrum)
+        
+    }
+    
+    func append(title: String) {
+        append(DailyScrum(title: title, attendees: [], lengthInMinutes: 1, theme: .bubblegum))
+    }
 }
