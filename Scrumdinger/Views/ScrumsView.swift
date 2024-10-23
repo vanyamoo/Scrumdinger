@@ -15,8 +15,20 @@ struct ScrumsView: View {
     let saveAction: () -> Void
     
     var body: some View {
-        List($scrums) { $scrum in
-            CardView(scrum: scrum)
+        NavigationStack {
+            List {
+                ForEach(scrums) { scrum in
+                    NavigationLink(value: scrum.id) { // value needs to match the Type in .navigationDestination
+                        CardView(scrum: scrum)
+                    }
+                }
+            }
+            .navigationDestination(for: DailyScrum.ID.self) { scrumId in
+                if let index = scrums.firstIndex(where: { $0.id == scrumId }) {
+                    DetailView(scrum: $scrums[index])
+                }
+            }
+            .navigationTitle("Daily Scrums")
         }
     }
 }

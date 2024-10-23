@@ -27,8 +27,6 @@ struct CardView: View {
         }
         .padding()
         .foregroundColor(scrum.theme.accentColor)
-        
-        
     }
     
     private var title: some View {
